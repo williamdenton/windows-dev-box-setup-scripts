@@ -58,7 +58,11 @@ choco install -y aws-vault
 
 choco install -y vscode-csharp
 choco install -y vscode-docker
-
+choco install -y smtp4dev
+choco install -y rabbitmq
+choco install -y nodejs-lts
+choco install -y yarn
+choco install -y urlrewrite
 
 #--- reenabling critial items ---
 Enable-UAC
