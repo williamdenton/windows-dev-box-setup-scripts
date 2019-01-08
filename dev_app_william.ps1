@@ -62,7 +62,6 @@ choco install -y smtp4dev
 choco install -y rabbitmq
 choco install -y nodejs-lts
 choco install -y yarn
-choco install -y urlrewrite
 
 #--- reenabling critial items ---
 Enable-UAC
