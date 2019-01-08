@@ -49,6 +49,7 @@ choco install -y sql-server-management-studio
 choco install -y visualstudio2017-workload-netweb
 choco install -y dotnetcore-sdk --version 2.1.502
 choco install -y gitextensions
+choco install -y kdiff3
 choco install -y linqpad
 
 choco install -y docker-desktop
