@@ -26,7 +26,6 @@ executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
-executeScript "WSL.ps1";
 executeScript "Browsers.ps1";
 
 #--- Tools ---
@@ -37,6 +36,9 @@ executeScript "Browsers.ps1";
 # visualstudio2017community
 # visualstudio2017professional
 # visualstudio2017enterprise
+
+choco install -y wsl
+choco install -y wsl-ubuntu-1804
 
 choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
@@ -65,6 +67,10 @@ choco install -y rabbitmq --version=3.7.7
 
 choco install nodejs-lts --version=8.15.0
 choco install -y yarn
+
+choco install paint.net
+choco install fiddler
+
 
 Install-PackageProvider -Name NuGet -Force
 Install-Module -Name SqlServer -Force
