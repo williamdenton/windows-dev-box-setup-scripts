@@ -52,6 +52,7 @@ choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
 
+choco install -y python2
 choco install -y docker-desktop
 choco install -y awscli
 choco install -y aws-vault
@@ -59,9 +60,15 @@ choco install -y aws-vault
 choco install -y vscode-csharp
 choco install -y vscode-docker
 choco install -y smtp4dev
-choco install -y rabbitmq
-choco install -y nodejs-lts
+choco install -y rabbitmq --version 3.7.7
+.'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
+
+choco install nodejs-lts --version 8.15.0
 choco install -y yarn
+
+Install-PackageProvider -Name NuGet -Force
+Install-Module -Name SqlServer -Force
+
 
 #--- reenabling critial items ---
 Enable-UAC
