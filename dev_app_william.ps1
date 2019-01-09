@@ -28,6 +28,8 @@ executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
 
+Update-SessionEnvironment #refreshing env due to Git install
+
 #--- Tools ---
 #--- Installing VS and VS Code with Git
 # See this for install args: https://chocolatey.org/packages/VisualStudio2017Community
@@ -42,13 +44,13 @@ choco install -y wsl-ubuntu-1804
 
 choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
-choco install -y visualstudio2017professional --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 
-
-Update-SessionEnvironment #refreshing env due to Git install
+choco install -y visualstudio2017professional
+choco install -y visualstudio2017-workload-netweb
+choco install -y visualstudio2017-workload-netcoretools
+choco install -y visualstudio2017-workload-manageddesktop
 
 choco install -y sql-server-management-studio
-choco install -y visualstudio2017-workload-netweb
 choco install -y dotnetcore-sdk --version=2.1.502
 choco install -y gitextensions
 choco install -y kdiff3
@@ -71,7 +73,7 @@ choco install -y yarn
 choco install -y paint.net
 choco install -y fiddler
 
-
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Install-PackageProvider -Name NuGet -Force
 Install-Module -Name SqlServer -Force
 
