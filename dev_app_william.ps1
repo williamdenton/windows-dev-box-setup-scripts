@@ -52,6 +52,7 @@ choco install -y visualstudio2017-workload-netweb
 choco install -y visualstudio2017-workload-netcoretools
 choco install -y visualstudio2017-workload-manageddesktop
 choco install -y netfx-4.7.2-devpack
+choco install -y netfx-4.6.2-devpack
 
 choco install -y sql-server-management-studio
 choco install -y dotnetcore-sdk --version=2.1.502
