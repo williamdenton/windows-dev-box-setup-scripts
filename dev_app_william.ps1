@@ -73,8 +73,6 @@ choco install -y yarn
 choco install -y paint.net
 choco install -y fiddler
 
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Install-PackageProvider -Name NuGet -Force
 Install-Module -Name SqlServer -Force
 
 
