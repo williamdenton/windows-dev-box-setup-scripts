@@ -27,6 +27,7 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
+executeScript "HyperV.ps1"
 
 Update-SessionEnvironment #refreshing env due to Git install
 
@@ -44,6 +45,7 @@ choco install -y wsl-ubuntu-1804
 
 choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
+Install-Module -Name SqlServer -Force
 
 choco install -y visualstudio2017professional
 choco install -y visualstudio2017-workload-netweb
@@ -73,7 +75,7 @@ choco install -y yarn
 choco install -y paint.net
 choco install -y fiddler
 
-Install-Module -Name SqlServer -Force
+
 
 
 #--- reenabling critial items ---
