@@ -65,11 +65,11 @@ choco install -y smtp4dev
 choco install -y rabbitmq --version=3.7.7
 .'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
 
-choco install nodejs-lts --version=8.15.0
+choco install -y nodejs-lts --version=8.15.0
 choco install -y yarn
 
-choco install paint.net
-choco install fiddler
+choco install -y paint.net
+choco install -y fiddler
 
 
 Install-PackageProvider -Name NuGet -Force
