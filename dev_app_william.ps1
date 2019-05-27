@@ -51,10 +51,19 @@ choco install -y visualstudio2017professional
 choco install -y visualstudio2017-workload-netweb
 choco install -y visualstudio2017-workload-netcoretools
 choco install -y visualstudio2017-workload-manageddesktop
+
+choco install -y visualstudio2019professional
+choco install -y visualstudio2019-workload-netweb
+choco install -y visualstudio2019-workload-netcoretools
+choco install -y visualstudio2019-workload-manageddesktop
+choco install -y visualstudio2019-workload-netcorebuildtools
+
 choco install -y netfx-4.7.2-devpack
 choco install -y netfx-4.6.2-devpack
 #choco install -y sql-server-management-studio
-choco install -y dotnetcore-sdk --version=2.1.502
+choco install -y dotnetcore-sdk --version=2.1.700
+choco install -y dotnetcore-sdk --version=2.2.300
+
 choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
