@@ -52,11 +52,12 @@ choco install -y visualstudio2017-workload-netweb
 choco install -y visualstudio2017-workload-netcoretools
 choco install -y visualstudio2017-workload-manageddesktop
 
-choco install -y visualstudio2019professional
-choco install -y visualstudio2019-workload-netweb
-choco install -y visualstudio2019-workload-netcoretools
-choco install -y visualstudio2019-workload-manageddesktop
-choco install -y visualstudio2019-workload-netcorebuildtools
+#doesn't work properly yet
+#choco install -y visualstudio2019professional
+#choco install -y visualstudio2019-workload-netweb
+#choco install -y visualstudio2019-workload-netcoretools
+#choco install -y visualstudio2019-workload-manageddesktop
+#choco install -y visualstudio2019-workload-netcorebuildtools
 
 choco install -y netfx-4.7.2-devpack
 choco install -y netfx-4.6.2-devpack
