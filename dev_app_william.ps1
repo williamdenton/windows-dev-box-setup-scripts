@@ -40,39 +40,41 @@ Update-SessionEnvironment #refreshing env due to Git install
 # visualstudio2017professional
 # visualstudio2017enterprise
 
-choco install -y wsl
-choco install -y wsl-ubuntu-1804
+#choco install -y wsl
+#choco install -y wsl-ubuntu-1804
 
 choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
 Install-Module -Name SqlServer -Force
 
-choco install -y visualstudio2017professional
-choco install -y visualstudio2017-workload-netweb
-choco install -y visualstudio2017-workload-netcoretools
-choco install -y visualstudio2017-workload-manageddesktop
+#choco install -y visualstudio2017professional
+#choco install -y visualstudio2017-workload-netweb
+#choco install -y visualstudio2017-workload-netcoretools
+#choco install -y visualstudio2017-workload-manageddesktop
 
 #doesn't work properly yet
+choco install -y visualstudio2019professional --package-parameters "--allWorkloads --includeRecommended --passive --locale en-US"
+
 #choco install -y visualstudio2019professional
 #choco install -y visualstudio2019-workload-netweb
 #choco install -y visualstudio2019-workload-netcoretools
 #choco install -y visualstudio2019-workload-manageddesktop
 #choco install -y visualstudio2019-workload-netcorebuildtools
 
-choco install -y netfx-4.7.2-devpack
-choco install -y netfx-4.6.2-devpack
+#choco install -y netfx-4.7.2-devpack
+#choco install -y netfx-4.6.2-devpack
 #choco install -y sql-server-management-studio
-choco install -y dotnetcore-sdk --version=2.1.700
-choco install -y dotnetcore-sdk --version=2.2.300
+choco install -y dotnetcore-sdk --version=2.1.802
+choco install -y dotnetcore-sdk --version=3.1.100
 
 choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
 
 choco install -y python2
-choco install -y docker-desktop
+#choco install -y docker-desktop
 choco install -y awscli
-choco install -y aws-vault
+#choco install -y aws-vault
 
 choco install -y vscode-csharp
 choco install -y vscode-docker
