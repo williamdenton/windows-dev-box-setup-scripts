@@ -59,7 +59,6 @@ choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
 
-choco install -y python2
 choco install -y docker-desktop
 choco install -y awscli
 
