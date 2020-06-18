@@ -55,6 +55,9 @@ choco install -y netfx-4.7.2-devpack # for Platform
 choco install -y sql-server-management-studio
 choco install -y dotnetcore-sdk
 
+choco install -y powershell-core
+choco install -y microsoft-windows-terminal
+
 choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
