@@ -24,10 +24,9 @@ function executeScript {
 #--- Setting up Windows ---
 executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
-#executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
-#executeScript "HyperV.ps1"
+executeScript "HyperV.ps1"
 
 Update-SessionEnvironment #refreshing env due to Git install
 
@@ -40,49 +39,38 @@ Update-SessionEnvironment #refreshing env due to Git install
 # visualstudio2017professional
 # visualstudio2017enterprise
 
-#choco install -y wsl
-#choco install -y wsl-ubuntu-1804
+choco install -y wsl
+choco install -y wsl-ubuntu-1804
 
-#choco install -y sql-server-2017
+choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
-#Install-Module -Name SqlServer -Force
+Install-Module -Name SqlServer -Force
 
-#choco install -y visualstudio2017professional
-#choco install -y visualstudio2017-workload-netweb
-#choco install -y visualstudio2017-workload-netcoretools
-#choco install -y visualstudio2017-workload-manageddesktop
-
-#doesn't work properly yet
 choco install -y visualstudio2019professional
-choco install -y visualstudio2019-workload-webbuildtools
+choco install -y visualstudio2019-workload-netweb
+choco install -y visualstudio2019-workload-netcoretools
+choco install -y visualstudio2019-workload-netcorebuildtools
 
-#choco install -y visualstudio2019professional
-#choco install -y visualstudio2019-workload-netweb
-#choco install -y visualstudio2019-workload-netcoretools
-#choco install -y visualstudio2019-workload-manageddesktop
-#choco install -y visualstudio2019-workload-netcorebuildtools
-
-choco install -y netfx-4.7.2-devpack
-choco install -y netfx-4.6.2-devpack
-#choco install -y sql-server-management-studio
-#choco install -y dotnetcore-sdk --version=2.1.802
-#choco install -y dotnetcore-sdk --version=3.1.100
+choco install -y netfx-4.7.2-devpack # for Platform
+choco install -y sql-server-management-studio
+choco install -y dotnetcore-sdk
 
 choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
 
 choco install -y python2
-#choco install -y docker-desktop
+choco install -y docker-desktop
 choco install -y awscli
-#choco install -y aws-vault
 
 choco install -y vscode-csharp
-#choco install -y vscode-docker
-#choco install -y dotnet3.5 # required for smtp4dev
-#choco install -y smtp4dev
-#choco install -y rabbitmq --version=3.7.7
-#.'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
+choco install -y vscode-docker
+
+choco install -y dotnet3.5 # required for smtp4dev
+choco install -y smtp4dev
+
+choco install -y rabbitmq --version=3.7.7
+.'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
 
 choco install -y nodejs-lts
 choco install -y yarn
