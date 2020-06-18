@@ -28,16 +28,19 @@ executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
 executeScript "HyperV.ps1"
 
-Update-SessionEnvironment #refreshing env due to Git install
+Update-SessionEnvironment # refreshing env due to Git install
 
 #--- Tools ---
+
 #--- Installing VS and VS Code with Git
-# See this for install args: https://chocolatey.org/packages/VisualStudio2017Community
+# See this for install args: https://chocolatey.org/packages/VisualStudio2019Community
 # https://docs.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-community
 # https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-workload-ids-and-component-ids
-# visualstudio2017community
-# visualstudio2017professional
-# visualstudio2017enterprise
+
+choco install -y visualstudio2019professional
+choco install -y visualstudio2019-workload-netweb
+choco install -y visualstudio2019-workload-netcoretools
+choco install -y visualstudio2019-workload-netcorebuildtools
 
 choco install -y wsl
 choco install -y wsl-ubuntu-1804
@@ -45,11 +48,6 @@ choco install -y wsl-ubuntu-1804
 choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
 Install-Module -Name SqlServer -Force
-
-choco install -y visualstudio2019professional
-choco install -y visualstudio2019-workload-netweb
-choco install -y visualstudio2019-workload-netcoretools
-choco install -y visualstudio2019-workload-netcorebuildtools
 
 choco install -y netfx-4.7.2-devpack # for Platform
 choco install -y sql-server-management-studio
@@ -72,16 +70,13 @@ choco install -y dotnet3.5 # required for smtp4dev
 choco install -y smtp4dev
 
 choco install -y rabbitmq --version=3.7.7
-.'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
+. 'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
 
 choco install -y nodejs-lts
 choco install -y yarn
 
 choco install -y paint.net
 choco install -y fiddler
-
-
-
 
 #--- reenabling critial items ---
 Enable-UAC
