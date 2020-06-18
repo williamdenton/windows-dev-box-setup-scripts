@@ -26,7 +26,13 @@ executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
-executeScript "HyperV.ps1"
+
+$usingBootcamp = $true; # $false when installing in a VM
+if ($usingBootcamp) {
+    executeScript "HyperV.ps1"
+
+    choco install -y docker-desktop
+}
 
 Update-SessionEnvironment # refreshing env due to Git install
 
@@ -60,7 +66,6 @@ choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
 
-choco install -y docker-desktop
 choco install -y awscli
 
 choco install -y vscode-csharp
