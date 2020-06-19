@@ -46,8 +46,7 @@ choco install -y visualstudio2019-workload-netweb
 choco install -y visualstudio2019-workload-netcoretools
 choco install -y visualstudio2019-workload-netcorebuildtools
 
-choco install -y wsl
-choco install -y wsl-ubuntu-1804
+#choco install -y wsl2 # not working, still pre-release
 
 choco install -y dotnetcore-sdk
 choco install -y powershell-core
