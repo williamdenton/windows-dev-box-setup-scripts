@@ -29,8 +29,6 @@ executeScript "Browsers.ps1";
 
 $usingBootcamp = $true; # $false when installing in a VM
 if ($usingBootcamp) {
-    executeScript "HyperV.ps1"
-
     choco install -y docker-desktop
 }
 
