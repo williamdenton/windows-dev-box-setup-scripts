@@ -76,6 +76,8 @@ choco install -y smtp4dev
 choco install -y rabbitmq --version=3.7.7
 . 'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
 
+choco install -y slack
+
 #--- reenabling critial items ---
 Enable-UAC
 Enable-MicrosoftUpdate
