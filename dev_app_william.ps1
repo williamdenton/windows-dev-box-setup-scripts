@@ -69,6 +69,7 @@ choco install -y fiddler
 choco install -y sql-server-2017
 choco install -y sql2016-clrtypes
 Install-Module -Name SqlServer -Force
+choco install -y NuGet.CommandLine
 choco install -y netfx-4.6.2-devpack
 choco install -y netfx-4.7.2-devpack
 choco install -y dotnet3.5 # required for smtp4dev
