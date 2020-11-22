@@ -72,8 +72,6 @@ Install-Module -Name SqlServer -Force
 choco install -y NuGet.CommandLine
 choco install -y netfx-4.6.2-devpack
 choco install -y netfx-4.7.2-devpack
-choco install -y dotnet3.5 # required for smtp4dev
-choco install -y smtp4dev
 choco install -y rabbitmq --version=3.7.7
 . 'C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmq-plugins' enable rabbitmq_management
 
