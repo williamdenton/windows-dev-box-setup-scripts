@@ -26,8 +26,6 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
 
-choco install -y docker-desktop # excluded when installing in a VM
-
 executeScript "Pushpay.ps1";
 
 #--- reenabling critial items ---
