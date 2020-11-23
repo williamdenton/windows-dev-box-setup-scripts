@@ -1,4 +1,10 @@
+#--- Browsers ---
+choco install -y googlechrome
+choco install -y firefox
+
 #--- Tools ---
+
+choco install -y git.install --params "/GitAndUnixToolsOnPath /WindowsTerminal /SChannel"
 
 Update-SessionEnvironment # refreshing env due to Git install
 
@@ -18,13 +24,17 @@ choco install -y dotnetcore-sdk
 choco install -y powershell-core
 choco install -y microsoft-windows-terminal
 choco install -y sql-server-management-studio
+choco install -y python
 choco install -y awscli
 choco install -y nodejs-lts
 choco install -y yarn
 
+choco install -y vscode
 choco install -y vscode-csharp
 choco install -y vscode-docker
 
+choco install -y sysinternals
+choco install -y 7zip.install
 choco install -y gitextensions
 choco install -y kdiff3
 choco install -y linqpad
