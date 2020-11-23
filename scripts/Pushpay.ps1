@@ -40,6 +40,7 @@ choco install -y kdiff3
 choco install -y linqpad
 choco install -y paint.net
 choco install -y fiddler
+choco install -y postman
 
 # for Platform
 choco install -y sql-server-2017
