@@ -1,5 +1,6 @@
 # Description: Boxstarter Script
 # Set up dev machine with common tools and prerequisites for running Platform
+# For a machine running Windows in a VM
 
 Disable-UAC
 
