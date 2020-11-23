@@ -46,7 +46,8 @@ To run a recipe script, click a link in the table below from your target machine
 |     | Xamarin (Visual Studio, Xamarin, Android SDK) |
 |     | Containers (Docker, Kubernetes, etc...)        |
 |     | Submit a PR with a recommended configuration!        |
-|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/williamdenton/windows-dev-box-setup-scripts/master/dev_app_william.ps1'>Williams Personal Script</a>|Windows fully loaded dev (vs2017, sql, aws tools, docker)       |
+|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/williamdenton/windows-dev-box-setup-scripts/master/dev_pushpay.ps1'>Pushpay dev</a>|Windows fully loaded dev (vs2017, sql, aws tools, docker)       |
+|<a href='http://boxstarter.org/package/url?https://raw.githubusercontent.com/williamdenton/windows-dev-box-setup-scripts/master/dev_pushpay_vm.ps1'>Pushpay dev vm</a>|Windows fully loaded dev (vs2017, sql, aws tools, docker). When running Windows in a VM.       |
 **Notes:**  
 1. If you are using WSL there's a followup step we recommend after running the setup script.  When the script finishes you will only have a root user with a blank password. You should  manually create a non-root user via `$ sudo adduser [USERNAME] sudo` 
 with a non-blank password. Use this user going forward. For more info on WSL please refer to the [documentation](https://docs.microsoft.com/en-us/windows/wsl/about).
